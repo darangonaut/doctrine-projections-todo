@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
+use Darangonaut\DoctrineProjections\Support\MappedTables;
 use Darangonaut\DoctrineProjections\Support\SharedPdoDriver;
 use Doctrine\DBAL\Connection as DbalConnection;
 use Doctrine\DBAL\Driver as DbalDriver;
@@ -88,14 +89,10 @@ class DoctrineServiceProvider extends ServiceProvider
      */
     private function restrictSchemaToMappedTables(EntityManagerInterface $em): void
     {
-        // Join tables are deliberately absent from this list. The filter
-        // narrows what Doctrine introspects, and SchemaTool still creates
-        // `task_tag` from the mapping — verified by dropping the table and
-        // watching the CREATE come back.
-        $owned = array_map(
-            static fn ($meta): string => $meta->getTableName(),
-            $em->getMetadataFactory()->getAllMetadata(),
-        );
+        // MappedTables, not a map over getTableName(): a join table has no
+        // entity, so the hand-rolled version leaves `task_tag` out and
+        // Doctrine stops being able to see a table it owns.
+        $owned = MappedTables::of($em);
 
         $em->getConnection()->getConfiguration()->setSchemaAssetsFilter(
             static fn (string $table): bool => in_array($table, $owned, true),
