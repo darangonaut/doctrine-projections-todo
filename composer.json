@@ -3,11 +3,14 @@
     "name": "laravel/laravel",
     "type": "project",
     "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "keywords": [
+        "laravel",
+        "framework"
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.3",
-        "darangonaut/laravel-doctrine-projections": "^0.1.1",
+        "darangonaut/laravel-doctrine-projections": "^0.2",
         "doctrine/dbal": "^4.4",
         "doctrine/orm": "^3.6",
         "laravel/framework": "^13.8",

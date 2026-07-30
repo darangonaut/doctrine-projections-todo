@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ceb2031c37c72b4bde964759634dafff",
+    "content-hash": "ab1c7ebbbe30d35871b400982a174f15",
     "packages": [
         {
             "name": "brick/math",
@@ -136,16 +136,16 @@
         },
         {
             "name": "darangonaut/laravel-doctrine-projections",
-            "version": "v0.1.1",
+            "version": "v0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/darangonaut/laravel-doctrine-projections.git",
-                "reference": "5fc6075a64ed723762f4784a725a90bccd68b231"
+                "reference": "5a3d0fc00d8adab4e6eac989b6e704774e5ff673"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/darangonaut/laravel-doctrine-projections/zipball/5fc6075a64ed723762f4784a725a90bccd68b231",
-                "reference": "5fc6075a64ed723762f4784a725a90bccd68b231",
+                "url": "https://api.github.com/repos/darangonaut/laravel-doctrine-projections/zipball/5a3d0fc00d8adab4e6eac989b6e704774e5ff673",
+                "reference": "5a3d0fc00d8adab4e6eac989b6e704774e5ff673",
                 "shasum": ""
             },
             "require": {
@@ -199,9 +199,9 @@
             ],
             "support": {
                 "issues": "https://github.com/darangonaut/laravel-doctrine-projections/issues",
-                "source": "https://github.com/darangonaut/laravel-doctrine-projections/tree/v0.1.1"
+                "source": "https://github.com/darangonaut/laravel-doctrine-projections/tree/v0.2.0"
             },
-            "time": "2026-07-30T09:44:33+00:00"
+            "time": "2026-07-30T17:12:40+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
