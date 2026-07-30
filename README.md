@@ -5,6 +5,8 @@ Malá todo aplikácia, ktorá existuje na jediný účel: ukázať, že
 funguje na zelenej lúke. Balík sa ťahá z Packagistu ako každá iná
 závislosť — nič tu nie je nalinkované na lokálny adresár.
 
+> Balík: [darangonaut/laravel-doctrine-projections](https://packagist.org/packages/darangonaut/laravel-doctrine-projections)
+
 **Zápis ide cez Doctrine entity, čítanie cez generované Eloquent projekcie.**
 
 ```php
