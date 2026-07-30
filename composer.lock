@@ -136,16 +136,16 @@
         },
         {
             "name": "darangonaut/laravel-doctrine-projections",
-            "version": "v0.3.0",
+            "version": "v0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/darangonaut/laravel-doctrine-projections.git",
-                "reference": "b5a5e090448b652b99b0d7958fbd9940edb2934a"
+                "reference": "be090ee17f67a1c36a0c65b229497495bb759f50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/darangonaut/laravel-doctrine-projections/zipball/b5a5e090448b652b99b0d7958fbd9940edb2934a",
-                "reference": "b5a5e090448b652b99b0d7958fbd9940edb2934a",
+                "url": "https://api.github.com/repos/darangonaut/laravel-doctrine-projections/zipball/be090ee17f67a1c36a0c65b229497495bb759f50",
+                "reference": "be090ee17f67a1c36a0c65b229497495bb759f50",
                 "shasum": ""
             },
             "require": {
@@ -199,9 +199,9 @@
             ],
             "support": {
                 "issues": "https://github.com/darangonaut/laravel-doctrine-projections/issues",
-                "source": "https://github.com/darangonaut/laravel-doctrine-projections/tree/v0.3.0"
+                "source": "https://github.com/darangonaut/laravel-doctrine-projections/tree/v0.3.1"
             },
-            "time": "2026-07-30T18:03:39+00:00"
+            "time": "2026-07-30T18:26:50+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
