@@ -48,7 +48,9 @@ class TodoListController extends Controller
                 $request->string('stav')->toString() !== '',
                 fn ($q) => $q->where('status', $request->string('stav')->toString()),
             )
-            ->orderBy('position')
+            // no ->orderBy() here: the entity declares #[ORM\OrderBy] and the
+            // generated relation carries it, so both sides sort the same way
+            // without the controller remembering to
             ->get();
 
         return view('lists.show', [

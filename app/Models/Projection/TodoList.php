@@ -49,6 +49,7 @@ class TodoList extends Model
     /** @return HasMany<Task, $this> */
     public function tasks(): HasMany
     {
-        return $this->hasMany(Task::class, 'list_id');
+        return $this->hasMany(Task::class, 'list_id')
+            ->orderBy('position', 'asc');
     }
 }
