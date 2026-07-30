@@ -88,13 +88,14 @@ class DoctrineServiceProvider extends ServiceProvider
      */
     private function restrictSchemaToMappedTables(EntityManagerInterface $em): void
     {
+        // Join tables are deliberately absent from this list. The filter
+        // narrows what Doctrine introspects, and SchemaTool still creates
+        // `task_tag` from the mapping — verified by dropping the table and
+        // watching the CREATE come back.
         $owned = array_map(
             static fn ($meta): string => $meta->getTableName(),
             $em->getMetadataFactory()->getAllMetadata(),
         );
-
-        // Join tables have no metadata of their own.
-        $owned[] = 'task_tag';
 
         $em->getConnection()->getConfiguration()->setSchemaAssetsFilter(
             static fn (string $table): bool => in_array($table, $owned, true),
