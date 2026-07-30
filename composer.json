@@ -10,7 +10,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.3",
-        "darangonaut/laravel-doctrine-projections": "^0.4",
+        "darangonaut/laravel-doctrine-projections": "^0.5",
         "doctrine/dbal": "^4.4",
         "doctrine/orm": "^3.6",
         "laravel/framework": "^13.8",
